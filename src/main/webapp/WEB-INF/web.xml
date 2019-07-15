@@ -1,0 +1,13 @@
+<web-app>
+    <servlet>
+        <!-- Fichier de configuration Spring par défaut    <nom-servlet>-servlet.xml. Ici :dispatcher-servlet.xml -->
+        <servlet-name>spitter</servlet-name>
+        <!-- Contrôleur    principal de Spring    MVC -->
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>spitter</servlet-name>
+        <url-pattern>/spitter</url-pattern>
+    </servlet-mapping>
+</web-app>
